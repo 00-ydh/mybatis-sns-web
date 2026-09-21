@@ -35,7 +35,7 @@ function ApiSns() {
   return (
     <div style={{ padding: '20px', maxWidth: '500px', margin: '0 auto', fontFamily: 'sans-serif' }}>
       <header style={{ borderBottom: '2px solid #222', paddingBottom: '10px', marginBottom: '20px' }}>
-        <h2>04 State 인터랙션 - MyBatis SNS</h2>
+        <h2>05 API 연동 - MyBatis SNS</h2>
       </header>
 
       {loading && <p>게시글 목록을 불러오는 중...</p>}

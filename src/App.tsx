@@ -2,6 +2,8 @@ import { BrowserRouter, Routes, Route, NavLink } from 'react-router';
 import Counter from './pages/01_Counter';
 import JsxSns from './pages/02_JsxSns';
 import PropsSns from './pages/03_PropsSns';
+import StateSns from './pages/04_StateSns';
+import ApiSns from './pages/05_ApiSns';
 
 function Home() {
   return (
@@ -15,6 +17,8 @@ function Home() {
         <li><NavLink to="/counter">01. 카운터 (React 시작 및 HMR)</NavLink></li>
         <li><NavLink to="/jsx">02. 단일 JSX (MyBatis SNS)</NavLink></li>
         <li><NavLink to="/props">03. Props 분리 (MyBatis SNS)</NavLink></li>
+        <li><NavLink to="/state">04. State 인터랙션 (MyBatis SNS)</NavLink></li>
+        <li><NavLink to="/api-sns">05. API 연동 (MyBatis SNS)</NavLink></li>
       </ul>
     </div>
   );
@@ -39,6 +43,8 @@ function App() {
           <NavLink to="/counter" style={navLinkStyle}>01. 카운터</NavLink>
           <NavLink to="/jsx" style={navLinkStyle}>02. 단일 JSX</NavLink>
           <NavLink to="/props" style={navLinkStyle}>03. Props 분리</NavLink>
+          <NavLink to="/state" style={navLinkStyle}>04. State</NavLink>
+          <NavLink to="/api-sns" style={navLinkStyle}>05. API 연동</NavLink>
         </nav>
 
         <main style={{ padding: '20px' }}>
@@ -47,6 +53,8 @@ function App() {
             <Route path="/counter" element={<Counter />} />
             <Route path="/jsx" element={<JsxSns />} />
             <Route path="/props" element={<PropsSns />} />
+            <Route path="/state" element={<StateSns />} />
+            <Route path="/api-sns" element={<ApiSns />} />
           </Routes>
         </main>
       </div>
